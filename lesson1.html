@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {width: 400px;
+              margin: 20px auto;
+              padding: 20px;
+              border: 7px solid rgb(237, 128, 185);
+              border-radius: 15px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: inline-block;
+            width: 80px;
+        }
+        input, select, button {
+            margin: 8px 0;
+            padding: 10px;
+        }
+        .btn-group {
+            margin-top: 15px;
+            text-align: center;
+        }
+        button {
+            background-color: rgb(255, 0, 144);
+            color: aliceblue;
+            border: none;
+            border-radius: 4px;
+        }
+        a {
+            margin: 10px;
+            text-decoration: none;
+            color: rgb(0, 128, 255);
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <h2>会员登录</h2>
+        <div>
+            <label for="username">用户名：</label>
+            <input type="text" id="username" name="username" placeholder="请输入用户名">
+            <a href="#">没有账号？</a>
+        </div>
+        <div>
+            <label for="password">密码：</label>
+            <input type="password" id="password" name="password" placeholder="请输入密码">
+            <a href="#">忘记密码</a>
+        </div>
+        <div>
+            <label for="save-period">保存密码：</label>
+            <select id="save-period" name="save-period">
+                <option value="1">保存一个月</option>
+                <option value="3">保存三个月</option>
+                <option value="0">从不保存</option>
+            </select>
+            <input type="checkbox" id="auto-login" name="auto-login">
+            <label for="auto-login">自动登录</label>
+        </div>
+        <div class="btn-group">
+            <button type="submit">立即登录</button>
+        </div>
+        <hr>
+        <div>
+            <label>我要找：</label>
+            <input type="radio" name="find">
+            <label>男朋友</label>
+            <input type="radio" name="find">
+            <label>女朋友</label>
+        </div>
+        <div>
+            <label>年龄</label>
+            <select>
+                <option selected>20-25</option>
+                <option>25-30</option>
+                <option>30-35</option>
+                <option>35-40</option>
+                <option>40-45</option>
+            </select>
+            <span>岁</span>
+        </div>
+        <div>
+            <button type="button">搜索</button>
+            <a href="#">高级搜索>></a>
+        </div>
+    </form>
+    
+</body>
+</html>
